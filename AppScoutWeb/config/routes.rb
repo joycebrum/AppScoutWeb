@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :competences
   resources :game_types
   resources :games
   resources :users
