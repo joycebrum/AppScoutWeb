@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @game.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @game.description %>
+</p>
+
+<p>
+  <strong>Duration min:</strong>
+  <%= @game.duration_min %>
+</p>
+
+<p>
+  <strong>Duration max:</strong>
+  <%= @game.duration_max %>
+</p>
+
+<p>
+  <strong>Material list:</strong>
+  <%= @game.material_list %>
+</p>
+
+<p>
+  <strong>Quant min:</strong>
+  <%= @game.quant_min %>
+</p>
+
+<p>
+  <strong>Quant max:</strong>
+  <%= @game.quant_max %>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>
