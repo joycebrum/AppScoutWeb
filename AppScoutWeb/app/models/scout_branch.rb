@@ -1,0 +1,2 @@
+class ScoutBranch < ApplicationRecord
+end
