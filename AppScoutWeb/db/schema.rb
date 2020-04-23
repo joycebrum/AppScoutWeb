@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_22_234230) do
+ActiveRecord::Schema.define(version: 2020_04_23_000426) do
 
   create_table "competences", force: :cascade do |t|
     t.string "title"
@@ -33,6 +33,18 @@ ActiveRecord::Schema.define(version: 2020_04_22_234230) do
     t.string "material_list"
     t.integer "quant_min"
     t.integer "quant_max"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "places", force: :cascade do |t|
+    t.string "place_type"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "scout_branches", force: :cascade do |t|
+    t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
