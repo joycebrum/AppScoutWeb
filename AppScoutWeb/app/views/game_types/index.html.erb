@@ -5,7 +5,7 @@
 <table class="table  table-responsive">
   <thead>
     <tr>
-      <th scope="col">Description</th>
+      <th scope="col"><%= @game_types.human_attribute_name :description%></th>
       <th scope="col" colspan="3"></th>
     </tr>
   </thead>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Game Type', new_game_type_path %>
+<%= link_to t('form_options.new'), new_game_type_path %>

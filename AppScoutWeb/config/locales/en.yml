@@ -245,7 +245,5 @@ en:
     game_types: 'Game Types'
     users: 'Users'
   actual_locale: "English (International)"
-  form_options:
-    show: Show
-    edit: Edit
-    Destroy: Destroy
+  app_name: Scout Activities
+  app_description: This is a platform of scout activities

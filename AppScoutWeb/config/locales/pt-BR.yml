@@ -36,6 +36,11 @@ pt-BR:
         first_name: Primeiro Nome
         email: Email
         registration_number: Registro	
+      competence:
+        title: Título
+        number: Número
+      game_type: 
+        description: Descrição
   date:
     abbr_day_names:
     - dom
@@ -250,6 +255,8 @@ pt-BR:
       long: "%d de %B de %Y, %H:%M"
       short: "%d de %B, %H:%M"
     pm: ''
+  app_name: Atividades escoteiras
+  app_description: Esta é uma plataforma de atividades escoteiras.
   navigation_bar:
     games: 'Jogos'
     competences: 'Competências'
@@ -257,7 +264,16 @@ pt-BR:
     users: 'Usuários'
     language: 'Idioma'
   actual_locale: "Português do Brasil"
+  form_title:
+    new_game: Novo Jogo
+    new_scout_branch: Novo Ramo
+    new_user: Novo Usuário
+    new_place: Novo Lugar
+    new_game_type: Novo Tipo de Jogo
+    new_competence: Nova Competência
   form_options:
     show: Mostrar
     edit: Editar
     destroy: Excluir
+    new: Criar
+    back: Voltar
