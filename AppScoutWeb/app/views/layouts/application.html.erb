@@ -40,7 +40,7 @@
           </ul>
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <%= t('navigation_bar.language') %>
+              <%= I18n.locale.to_s == 'en' ? 'English' : 'Português' %>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <%= link_to 'Português', '/?locale=pt-BR', class: "dropdown-item" %>
@@ -51,6 +51,5 @@
       </nav>
       <%= yield %>
     </div>
-    <script>$.notify("Hello World", "success");</script>
   </body>
 </html>

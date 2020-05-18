@@ -1,17 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Games</h1>
+<h1><%= @games.model_name.human(count:2) %></h1>
 
 <table class="table table-responsive">
   <thead>
     <tr> 
       <th scope="col"><%= @games.human_attribute_name :title%></th>
       <th scope="col"><%= @games.human_attribute_name :description%></th>
-      <th scope="col"><%= @games.human_attribute_name :duration_min%></th>
-      <th scope="col"><%= @games.human_attribute_name :duration_max%></th>
+      <th scope="col"><%= @games.human_attribute_name :duration%></th>
       <th scope="col"><%= @games.human_attribute_name :material_list%></th>
-      <th scope="col"><%= @games.human_attribute_name :quant_min%></th>
-      <th scope="col"><%= @games.human_attribute_name :quant_max%></th>
+      <th scope="col"><%= @games.human_attribute_name :quant%></th>
       <th scope="col" colspan="3"></th>
     </tr>
   </thead>
@@ -21,11 +19,9 @@
       <tr>
         <td><%= game.title %></td>
         <td><%= game.description %></td>
-        <td><%= game.duration_min %></td>
-        <td><%= game.duration_max %></td>
+        <td><%= game.duration_min %> a <%= game.duration_max %> min</td>
         <td><%= game.material_list %></td>
-        <td><%= game.quant_min %></td>
-        <td><%= game.quant_max %></td>
+        <td><%= game.quant_min %> a <%= game.quant_max %></td>
         <td><%= link_to t('form_options.show'), game %></td>
         <td><%= link_to t('form_options.edit'), edit_game_path(game) %></td>
         <td><%= link_to t('form_options.destroy'), game, method: :delete, data: { confirm: 'Are you sure?' } %></td>

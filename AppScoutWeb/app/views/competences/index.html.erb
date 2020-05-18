@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Competences</h1>
+<h1><%= @competences.model_name.human(count:2) %></h1>
 
 <table class="table table-responsive">
   <thead>
     <tr>
-      <th scope="col">Title</th>
-      <th scope="col">Number</th>
+      <th scope="col"><%= @competences.human_attribute_name :title%></th>
+      <th scope="col"><%= @competences.human_attribute_name :number%></th>
       <th scope="col" colspan="3"></th>
     </tr>
   </thead>

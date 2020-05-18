@@ -1,14 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Users</h1>
+<h1><%= @users.model_name.human(count:2) %></h1>
 
 <table class="table table-responsive">
   <thead>
     <tr>
-      <th scope="col">First name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Password</th>
-      <th scope="col">Registration number</th>
+      <th scope="col"><%= @users.human_attribute_name :first_name%></th>
+      <th scope="col"><%= @users.human_attribute_name :email%></th>
+      <th scope="col"><%= @users.human_attribute_name :registration_number%></th>
       <th scope="col" colspan="3"></th>
     </tr>
   </thead>
@@ -18,7 +17,6 @@
       <tr>
         <td><%= user.first_name %></td>
         <td><%= user.email %></td>
-        <td><%= user.password %></td>
         <td><%= user.registration_number %></td>
         <td><%= link_to t('form_options.show'), user %></td>
         <td><%= link_to t('form_options.edit'), edit_user_path(user) %></td>

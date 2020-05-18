@@ -11,6 +11,15 @@ pt-BR:
       game: 
         one: Jogo
         other: Jogos
+      competence:
+        one: Competência
+        other: Competências
+      game_type:
+        one: Tipo de Jogo
+        other: Tipos de Jogos
+      user:
+        one: Usuário
+        other: Usuários
     attributes:
       game:
         id: Código
@@ -18,9 +27,15 @@ pt-BR:
         title: Título
         duration_min: Duração Mínima
         duration_max: Duração Máxima
+        duration: Duração
         material_list: Lista de Material
         quant_min: Quantidade Mínima
-        quant_max: Quantidade Máxima	
+        quant_max: Quantidade Máxima
+        quant: Quantidade
+      user:
+        first_name: Primeiro Nome
+        email: Email
+        registration_number: Registro	
   date:
     abbr_day_names:
     - dom
