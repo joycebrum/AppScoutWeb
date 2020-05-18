@@ -1,6 +1,15 @@
 class ApplicationController < ActionController::Base
   before_action :set_brand
   before_action :set_locale
+  
+  def current_class(test_path)
+    return 'nav-link active' if request.path == test_path
+    'nav-link'
+  end
+
+  def current_path?(test_path)
+    return request.path == test_path
+  end
 
   private
   def set_brand
