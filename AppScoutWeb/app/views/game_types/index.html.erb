@@ -2,11 +2,11 @@
 
 <h1>Game Types</h1>
 
-<table>
+<table class="table  table-responsive">
   <thead>
     <tr>
-      <th>Description</th>
-      <th colspan="3"></th>
+      <th scope="col">Description</th>
+      <th scope="col" colspan="3"></th>
     </tr>
   </thead>
 
@@ -14,9 +14,9 @@
     <% @game_types.each do |game_type| %>
       <tr>
         <td><%= game_type.description %></td>
-        <td><%= link_to 'Show', game_type %></td>
-        <td><%= link_to 'Edit', edit_game_type_path(game_type) %></td>
-        <td><%= link_to 'Destroy', game_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('form_options.show'), game_type %></td>
+        <td><%= link_to t('form_options.edit'), edit_game_type_path(game_type) %></td>
+        <td><%= link_to t('form_options.destroy'), game_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

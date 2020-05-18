@@ -240,8 +240,9 @@ pt-BR:
     competences: 'Competências'
     game_types: 'Tipos de Jogos'
     users: 'Usuários'
+    language: 'Idioma'
   actual_locale: "Português do Brasil"
   form_options:
     show: Mostrar
     edit: Editar
-    Destroy: Excluir
+    destroy: Excluir

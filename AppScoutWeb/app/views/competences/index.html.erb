@@ -2,12 +2,12 @@
 
 <h1>Competences</h1>
 
-<table>
+<table class="table table-responsive">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Number</th>
-      <th colspan="3"></th>
+      <th scope="col">Title</th>
+      <th scope="col">Number</th>
+      <th scope="col" colspan="3"></th>
     </tr>
   </thead>
 
@@ -16,9 +16,9 @@
       <tr>
         <td><%= competence.title %></td>
         <td><%= competence.number %></td>
-        <td><%= link_to 'Show', competence %></td>
-        <td><%= link_to 'Edit', edit_competence_path(competence) %></td>
-        <td><%= link_to 'Destroy', competence, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('form_options.show'), competence %></td>
+        <td><%= link_to t('form_options.edit'), edit_competence_path(competence) %></td>
+        <td><%= link_to t('form_options.destroy'), competence, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
