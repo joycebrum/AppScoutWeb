@@ -20,3 +20,5 @@ Rails.application.config.assets.precompile += %w(scaffolds.css
                                                  scout_branches.css
                                                  users.css
                                                 )
+
+Rails.application.config.assets.precompile += %w( application.js )                                                
