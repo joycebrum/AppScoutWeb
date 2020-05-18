@@ -257,6 +257,7 @@ pt-BR:
     pm: ''
   app_name: Atividades escoteiras
   app_description: Esta é uma plataforma de atividades escoteiras.
+  welcome: Seja bem vindo!
   navigation_bar:
     games: 'Jogos'
     competences: 'Competências'

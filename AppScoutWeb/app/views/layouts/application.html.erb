@@ -23,8 +23,11 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#"> <%=image_tag @brand, width: 80, height: 40%> </a>
+          <%=image_tag @brand, width: 80, height: 40, class: "navbar-brand"%>
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <%= active_link_to t('navigation_bar.home'), '/', class: "nav-link" %>
+            </li>
             <li class="nav-item">
               <%= active_link_to t('navigation_bar.games'), games_path, class: "nav-link" %>
             </li>
