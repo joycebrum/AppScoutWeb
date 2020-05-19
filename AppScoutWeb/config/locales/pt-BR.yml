@@ -257,6 +257,7 @@ pt-BR:
     pm: ''
   app_name: Atividades escoteiras
   app_description: Esta é uma plataforma de atividades escoteiras.
+  app_mini_tutorial: Aqui você pode montar atividades escoteiras, procurando os jogos desejados com diversos tipos de filtro. Além disso, a plataforma é colaborativa então, para colaborar com o cadastro de jogos basta se cadastrar.
   welcome: Seja bem vindo!
   navigation_bar:
     games: 'Jogos'
