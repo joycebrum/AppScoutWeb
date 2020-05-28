@@ -2,26 +2,30 @@
 
 <h1>Places</h1>
 
-<table class="table  table-responsive">
-  <thead>
-    <tr>
-      <th scope="col">Place type</th>
-      <th scope="col" colspan="3"></th>
-    </tr>
-  </thead>
+<div class="row">
+  <div class="col-12">
+    <table class="table  table-responsive">
+      <thead>
+        <tr>
+          <th scope="col"><%= @places.human_attribute_name :place_type %></th>
+          <th scope="col" colspan="3"></th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @places.each do |place| %>
-      <tr>
-        <td><%= place.place_type %></td>
-        <td><%= link_to t('form_options.show'), place %></td>
-        <td><%= link_to t('form_options.edit'), edit_place_path(place) %></td>
-        <td><%= link_to t('form_options.destroy'), place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tbody>
+        <% @places.each do |place| %>
+          <tr>
+            <td><%= place.place_type %></td>
+            <td><%= link_to t('form_options.show'), place %></td>
+            <td><%= link_to t('form_options.edit'), edit_place_path(place) %></td>
+            <td><%= link_to t('form_options.destroy'), place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 <br>
 
-<%= link_to t('form_options.new'), new_place_path %>
+<%= link_to t('form_options.new'), new_place_path, class: "btn btn-primary", type: "button" %>

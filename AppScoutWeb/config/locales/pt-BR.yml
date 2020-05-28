@@ -41,6 +41,8 @@ pt-BR:
         number: Número
       game_type: 
         description: Descrição
+      place:
+        place_type: Tipo de Lugar
   date:
     abbr_day_names:
     - dom
@@ -256,8 +258,9 @@ pt-BR:
       short: "%d de %B, %H:%M"
     pm: ''
   app_name: Atividades escoteiras
-  app_description: Esta é uma plataforma de atividades escoteiras.
-  app_mini_tutorial: Aqui você pode montar atividades escoteiras, procurando os jogos desejados com diversos tipos de filtro. Além disso, a plataforma é colaborativa então, para colaborar com o cadastro de jogos basta se cadastrar.
+  messages:
+    description: Esta é uma plataforma de atividades escoteiras.
+    explanation: Aqui você pode montar atividades escoteiras, procurando os jogos desejados com diversos tipos de filtro. Além disso, a plataforma é colaborativa então, para colaborar com o cadastro de jogos basta se cadastrar.
   welcome: Seja bem vindo!
   navigation_bar:
     games: 'Jogos'

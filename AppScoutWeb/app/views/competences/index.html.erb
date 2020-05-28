@@ -1,29 +1,32 @@
 <p id="notice"><%= notice %></p>
 
 <h1><%= @competences.model_name.human(count:2) %></h1>
+<div class="row">
+  <div class="col-12">
+    <table class="table table-responsive">
+      <thead>
+        <tr>
+          <th scope="col"><%= @competences.human_attribute_name :title%></th>
+          <th scope="col"><%= @competences.human_attribute_name :number%></th>
+          <th scope="col" colspan="3"></th>
+        </tr>
+      </thead>
 
-<table class="table table-responsive">
-  <thead>
-    <tr>
-      <th scope="col"><%= @competences.human_attribute_name :title%></th>
-      <th scope="col"><%= @competences.human_attribute_name :number%></th>
-      <th scope="col" colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @competences.each do |competence| %>
-      <tr>
-        <td><%= competence.title %></td>
-        <td><%= competence.number %></td>
-        <td><%= link_to t('form_options.show'), competence %></td>
-        <td><%= link_to t('form_options.edit'), edit_competence_path(competence) %></td>
-        <td><%= link_to t('form_options.destroy'), competence, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tbody>
+        <% @competences.each do |competence| %>
+          <tr>
+            <td><%= competence.title %></td>
+            <td><%= competence.number %></td>
+            <td><%= link_to t('form_options.show'), competence %></td>
+            <td><%= link_to t('form_options.edit'), edit_competence_path(competence) %></td>
+            <td><%= link_to t('form_options.destroy'), competence, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 <br>
 
-<%= link_to t('form_options.new'), new_competence_path %>
+<%= link_to t('form_options.new'), new_competence_path, class: "btn btn-primary", type: "button" %>

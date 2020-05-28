@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong><%= Competence.human_attribute_name :title %>:</strong>
   <%= @competence.title %>
 </p>
 
 <p>
-  <strong>Number:</strong>
+  <strong><%= Competence.human_attribute_name :number %>:</strong>
   <%= @competence.number %>
 </p>
 

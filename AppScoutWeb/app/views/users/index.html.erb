@@ -1,31 +1,35 @@
 <p id="notice"><%= notice %></p>
 
 <h1><%= @users.model_name.human(count:2) %></h1>
+<div class="row">
+  <div class="col-12">
+    <table class="table table-responsive">
+      <thead>
+        <tr>
+          <th scope="col"><%= @users.human_attribute_name :first_name%></th>
+          <th scope="col"><%= @users.human_attribute_name :email%></th>
+          <th scope="col"><%= @users.human_attribute_name :registration_number%></th>
+          <th scope="col" colspan="3"></th>
+        </tr>
+      </thead>
 
-<table class="table table-responsive">
-  <thead>
-    <tr>
-      <th scope="col"><%= @users.human_attribute_name :first_name%></th>
-      <th scope="col"><%= @users.human_attribute_name :email%></th>
-      <th scope="col"><%= @users.human_attribute_name :registration_number%></th>
-      <th scope="col" colspan="3"></th>
-    </tr>
-  </thead>
+      <tbody>
+        <% @users.each do |user| %>
+          <tr>
+            <td><%= user.first_name %></td>
+            <td><%= user.email %></td>
+            <td><%= user.registration_number %></td>
+            <td> <i class="fas fa-eye"></i> <%= link_to t('form_options.show'), user %></td>
+            <td><%= link_to t('form_options.edit'), edit_user_path(user) %></td>
+            <td><%= link_to t('form_options.destroy'), user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
 
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.first_name %></td>
-        <td><%= user.email %></td>
-        <td><%= user.registration_number %></td>
-        <td><%= link_to t('form_options.show'), user %></td>
-        <td><%= link_to t('form_options.edit'), edit_user_path(user) %></td>
-        <td><%= link_to t('form_options.destroy'), user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <br>
 
-<%= link_to t('form_options.new'), new_user_path %>
+<%= link_to t('form_options.new'), new_user_path, class: "btn btn-primary", type: "button" %>

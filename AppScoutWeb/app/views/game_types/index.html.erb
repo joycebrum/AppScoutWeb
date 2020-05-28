@@ -1,27 +1,30 @@
 <p id="notice"><%= notice %></p>
 
 <h1><%= @game_types.model_name.human(count:2) %></h1>
+<div class="row">
+  <div class="col-12">
+    <table class="table  table-responsive">
+      <thead>
+        <tr>
+          <th scope="col"><%= @game_types.human_attribute_name :description%></th>
+          <th scope="col" colspan="3"></th>
+        </tr>
+      </thead>
 
-<table class="table  table-responsive">
-  <thead>
-    <tr>
-      <th scope="col"><%= @game_types.human_attribute_name :description%></th>
-      <th scope="col" colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @game_types.each do |game_type| %>
-      <tr>
-        <td><%= game_type.description %></td>
-        <td><%= link_to t('form_options.show'), game_type %></td>
-        <td><%= link_to t('form_options.edit'), edit_game_type_path(game_type) %></td>
-        <td><%= link_to t('form_options.destroy'), game_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tbody>
+        <% @game_types.each do |game_type| %>
+          <tr>
+            <td><%= game_type.description %></td>
+            <td><%= link_to t('form_options.show'), game_type %></td>
+            <td><%= link_to t('form_options.edit'), edit_game_type_path(game_type) %></td>
+            <td><%= link_to t('form_options.destroy'), game_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 <br>
 
-<%= link_to t('form_options.new'), new_game_type_path %>
+<%= link_to t('form_options.new'), new_game_type_path, class: "btn btn-primary", type: "button" %>

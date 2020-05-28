@@ -1,38 +1,28 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong><%= Game.human_attribute_name :title %>:</strong>
   <%= @game.title %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong><%= Game.human_attribute_name :description %>:</strong>
   <%= @game.description %>
 </p>
 
 <p>
-  <strong>Duration min:</strong>
-  <%= @game.duration_min %>
+  <strong><%= Game.human_attribute_name :duration %>:</strong>
+  <%= @game.duration_min %> - <%= @game.duration_max %> min
 </p>
 
 <p>
-  <strong>Duration max:</strong>
-  <%= @game.duration_max %>
-</p>
-
-<p>
-  <strong>Material list:</strong>
+  <strong><%= Game.human_attribute_name :material_list %>:</strong>
   <%= @game.material_list %>
 </p>
 
 <p>
-  <strong>Quant min:</strong>
-  <%= @game.quant_min %>
-</p>
-
-<p>
-  <strong>Quant max:</strong>
-  <%= @game.quant_max %>
+  <strong><%= Game.human_attribute_name :quant %>:</strong>
+  <%= @game.quant_min %> - <%= @game.quant_max %>
 </p>
 
 <%= link_to t('form_options.edit'), edit_game_path(@game) %> |
