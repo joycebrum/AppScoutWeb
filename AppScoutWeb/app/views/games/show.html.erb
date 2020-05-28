@@ -28,6 +28,15 @@
     <%= label_tag nil, @game.class.human_attribute_name(:material_list) %>
     <%= text_area_tag nil, @game.material_list, class: "form-control", type: "text", disabled: true %>
   </div>
+  <div class="col-12 col-md-6 field form-group">
+    <%= label_tag nil, @game.class.human_attribute_name(:url_image) %>
+    <%= text_field_tag nil, @game.url_image, class: "form-control", disabled: true %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-md-6">
+    <% unless @game.url_image.blank? %> <%=image_tag @game.url_image, width: 200, height: 200%> <%end%>
+  </div>
 </div>
 
 <%= link_to t('form_options.edit'), edit_game_path(@game), class: "btn btn-outline-secondary mt-2" %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_23_000426) do
+ActiveRecord::Schema.define(version: 2020_05_28_215259) do
 
   create_table "competences", force: :cascade do |t|
     t.string "title"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2020_04_23_000426) do
     t.integer "quant_max"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "url_image"
   end
 
   create_table "places", force: :cascade do |t|

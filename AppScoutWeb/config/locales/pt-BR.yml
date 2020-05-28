@@ -39,6 +39,8 @@ pt-BR:
         quant_min: Quantidade Mínima
         quant_max: Quantidade Máxima
         quant: Quantidade
+        image: Imagem
+        url_image: Url da Imagem
       user:
         first_name: Primeiro Nome
         email: Email

@@ -6,6 +6,7 @@
     <table class="table table-responsive">
       <thead>
         <tr> 
+          <th scope="col"><%= @games.human_attribute_name :image%></th>
           <th scope="col"><%= @games.human_attribute_name :title%></th>
           <th scope="col"><%= @games.human_attribute_name :description%></th>
           <th scope="col"><%= @games.human_attribute_name :duration%></th>
@@ -18,6 +19,7 @@
       <tbody>
         <% @games.each do |game| %>
           <tr>
+            <td><% unless game.url_image.blank? %>  <%=image_tag game.url_image, width: 25, height: 25%> <%end%> </td>
             <td><%= game.title %></td>
             <td><%= game.description %></td>
             <td><%= game.duration_min %> a <%= game.duration_max %> min</td>
