@@ -1,24 +1,29 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong> <%= User.human_attribute_name :first_name %>:</strong>
-  <%= @user.first_name %>
-</p>
-
-<p>
-  <strong><%= User.human_attribute_name :email %>:</strong>
-  <%= @user.email %>
-</p>
-
-<p>
-  <strong><%= User.human_attribute_name :password %>:</strong>
-  <%= @user.password %>
-</p>
-
-<p>
-  <strong><%= User.human_attribute_name :registration_number %>:</strong>
-  <%= @user.registration_number %>
-</p>
-
-<%= link_to t('form_options.edit'), edit_user_path(@user) %> |
-<%= link_to t('form_options.back'), users_path %>
+<div class="row">
+  <div class="col-6">
+    <div class="field form-group">
+      <%= label_tag nil, @user.class.human_attribute_name(:first_name) %>
+      <%= text_field_tag nil, @user.first_name, class: "form-control", disabled: true %>
+    </div>
+  </div>
+ <div class="col-6">
+    <div class="field form-group">
+      <%= label_tag nil, @user.class.human_attribute_name(:email) %>
+      <%= text_field_tag nil,  @user.email, class: "form-control", disabled: true %>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="field form-group">
+      <%= label_tag nil, @user.class.human_attribute_name(:password) %>
+      <%= text_field_tag nil,  @user.password, class: "form-control", disabled: true, type: "password" %>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="field form-group">
+      <%= label_tag nil, @user.class.human_attribute_name(:registration_number) %>
+      <%= text_field_tag nil,  @user.registration_number, class: "form-control", disabled: true %>
+    </div>
+  </div>
+</div>
+<%= link_to t('form_options.edit'), edit_user_path(@user), class: "btn btn-outline-secondary mt-2" %>
+<%= link_to t('form_options.back'), users_path, class: "btn btn-outline-secondary mt-2" %>

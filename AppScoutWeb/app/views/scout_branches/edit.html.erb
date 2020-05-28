@@ -1,6 +1,6 @@
-<h1>Editing Scout Branch</h1>
+<h1><%=t('form_title.editing_scout_branch')%></h1>
 
 <%= render 'form', scout_branch: @scout_branch %>
 
-<%= link_to t('form_options.show'), @scout_branch %> |
-<%= link_to t('form_options.back'), scout_branches_path %>
+<%= link_to t('form_options.show'), @scout_branch, class: "btn btn-outline-secondary mt-2" %>
+<%= link_to t('form_options.back'), scout_branches_path, class: "btn btn-outline-secondary mt-2" %>

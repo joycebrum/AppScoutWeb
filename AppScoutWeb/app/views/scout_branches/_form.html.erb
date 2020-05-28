@@ -1,22 +1,28 @@
 <%= form_with(model: scout_branch, local: true) do |form| %>
-  <% if scout_branch.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(scout_branch.errors.count, "error") %> prohibited this scout_branch from being saved:</h2>
+  <div class="row">
+    <div class="col-12">
+      <% if scout_branch.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(scout_branch.errors.count, "error") %> prohibited this scout_branch from being saved:</h2>
 
-      <ul>
-        <% scout_branch.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
+          <ul>
+            <% scout_branch.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
+    <div class="col-12 col-md-6">
+      <div class="field form-group">
+        <%= form.label :description %>
+        <%= form.text_field :description, class: "form-control" %>
+      </div>
+    </div>
   </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="row">
+    <div class="col actions">
+      <%= form.submit nil, class: "btn btn-primary"%>
+    </div>
   </div>
 <% end %>

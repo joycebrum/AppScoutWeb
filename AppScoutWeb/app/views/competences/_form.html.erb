@@ -1,27 +1,30 @@
-<%= form_with(model: competence, local: true) do |form| %>
-  <% if competence.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(competence.errors.count, "error") %> prohibited this competence from being saved:</h2>
+<%= form_with(model: competence, local: true) do |form|%>
+  <div class="row">
+    <div class="col-12">
+      <% if competence.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(competence.errors.count, "error") %> prohibited this competence from being saved:</h2>
 
-      <ul>
-        <% competence.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
+          <ul>
+            <% competence.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <div class="col-12 col-md-2 field form-group">
+      <%= form.label :number %>
+      <%= form.number_field :number, class: "form-control" %>
+    </div>
+    <div class="col-12 col-md-10 field form-group">  
+      <%= form.label :title %>
+      <%= form.text_area :title, class: "form-control" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :number %>
-    <%= form.number_field :number %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="row">
+    <div class="col actions">
+      <%= form.submit nil, class: "btn btn-primary" %>
+    </div>
   </div>
 <% end %>

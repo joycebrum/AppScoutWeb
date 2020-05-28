@@ -1,6 +1,6 @@
-<h1>Editing User</h1>
+<h1><%=t('form_title.editing_user')%></h1>
 
 <%= render 'form', user: @user %>
 
-<%= link_to t('form_options.show'), @user %> |
-<%= link_to t('form_options.back'), users_path %>
+  <%= link_to t('form_options.show'), @user, class: "btn btn-outline-secondary mt-2", type: "button" %>
+  <%= link_to t('form_options.back'), users_path, class: "btn btn-outline-secondary mt-2", type: "button" %>

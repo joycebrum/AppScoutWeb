@@ -1,6 +1,6 @@
-<h1>Editing Place</h1>
+<h1><%=t('form_title.editing_place')%></h1>
 
 <%= render 'form', place: @place %>
 
-<%= link_to t('form_options.show'), @place %> |
-<%= link_to t('form_options.back'), places_path %>
+<%= link_to t('form_options.show'), @place, class: "btn btn-outline-secondary mt-2" %>
+<%= link_to t('form_options.back'), places_path, class: "btn btn-outline-secondary mt-2" %>

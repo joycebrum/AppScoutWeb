@@ -1,6 +1,6 @@
-<h1>Editing Game Type</h1>
+<h1><%=t('form_title.editing_game_type')%></h1>
 
 <%= render 'form', game_type: @game_type %>
 
-<%= link_to t('form_options.show'), @game_type %> |
-<%= link_to t('form_options.back'), game_types_path %>
+<%= link_to t('form_options.show'), @game_type, class: "btn btn-outline-secondary mt-2" %> 
+<%= link_to t('form_options.back'), game_types_path, class: "btn btn-outline-secondary mt-2" %>

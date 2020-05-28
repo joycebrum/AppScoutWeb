@@ -1,29 +1,34 @@
 <p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-12 col-md-4">
+    <%= label_tag nil, @game.class.human_attribute_name(:title) %>
+    <%= text_field_tag nil, @game.title, class: "form-control", disabled: true %>
+  </div>
+  <div class="col-6 col-md-2">
+    <%= label_tag nil, @game.class.human_attribute_name(:duration_min) %>
+    <%= text_field_tag nil, @game.duration_min, class: "form-control", disabled: true %>
+  </div>
+  <div class="col-6 col-md-2">
+    <%= label_tag nil, @game.class.human_attribute_name(:duration_max) %>
+    <%= text_field_tag nil, @game.duration_max, class: "form-control", disabled: true %>
+  </div>
+  <div class="col-6 col-md-2">
+    <%= label_tag nil, @game.class.human_attribute_name(:quant_min) %>
+    <%= text_field_tag nil, @game.quant_min, class: "form-control", disabled: true %>
+  </div>
+  <div class="col-6 col-md-2">
+    <%= label_tag nil, @game.class.human_attribute_name(:quant_max) %>
+    <%= text_field_tag nil, @game.quant_max, class: "form-control", disabled: true %>
+  </div>
+  <div class="col-12">
+    <%= label_tag nil, @game.class.human_attribute_name(:description) %>
+    <%= text_area_tag nil, @game.description, class: "form-control", type: "text", disabled: true %>
+  </div>
+  <div class="col-12">
+    <%= label_tag nil, @game.class.human_attribute_name(:material_list) %>
+    <%= text_area_tag nil, @game.material_list, class: "form-control", type: "text", disabled: true %>
+  </div>
+</div>
 
-<p>
-  <strong><%= Game.human_attribute_name :title %>:</strong>
-  <%= @game.title %>
-</p>
-
-<p>
-  <strong><%= Game.human_attribute_name :description %>:</strong>
-  <%= @game.description %>
-</p>
-
-<p>
-  <strong><%= Game.human_attribute_name :duration %>:</strong>
-  <%= @game.duration_min %> - <%= @game.duration_max %> min
-</p>
-
-<p>
-  <strong><%= Game.human_attribute_name :material_list %>:</strong>
-  <%= @game.material_list %>
-</p>
-
-<p>
-  <strong><%= Game.human_attribute_name :quant %>:</strong>
-  <%= @game.quant_min %> - <%= @game.quant_max %>
-</p>
-
-<%= link_to t('form_options.edit'), edit_game_path(@game) %> |
-<%= link_to t('form_options.back'), games_path %>
+<%= link_to t('form_options.edit'), edit_game_path(@game), class: "btn btn-outline-secondary mt-2" %>
+<%= link_to t('form_options.back'), games_path, class: "btn btn-outline-secondary mt-2" %>

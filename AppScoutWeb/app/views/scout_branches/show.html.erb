@@ -1,9 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong><%= ScoutBranch.human_attribute_name :description %>:</strong>
-  <%= @scout_branch.description %>
-</p>
+<div class="row">
+  <div class="col-12 col-md-6">
+    <%= label_tag nil, @scout_branch.class.human_attribute_name(:description) %>
+    <%= text_area_tag nil, @scout_branch.description, class: "form-control", disabled: true %>
+  </div>
+</div>
 
-<%= link_to t('form_options.edit'), edit_scout_branch_path(@scout_branch) %> |
-<%= link_to t('form_options.back'), scout_branches_path %>
+<%= link_to t('form_options.edit'), edit_scout_branch_path(@scout_branch), class: "btn btn-outline-secondary mt-2" %>
+<%= link_to t('form_options.back'), scout_branches_path, class: "btn btn-outline-secondary mt-2" %>

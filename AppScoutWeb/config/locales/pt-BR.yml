@@ -20,6 +20,13 @@ pt-BR:
       user:
         one: Usuário
         other: Usuários
+      scout_branch: 
+        one: Ramo
+        other: Ramos
+      place:
+        one: Lugar
+        other: Lugares
+      
     attributes:
       game:
         id: Código
@@ -267,6 +274,8 @@ pt-BR:
     competences: 'Competências'
     game_types: 'Tipos de Jogos'
     users: 'Usuários'
+    places: 'Lugares'
+    scout_branches: 'Ramos'
     language: 'Idioma'
   actual_locale: "Português do Brasil"
   form_title:
@@ -276,6 +285,12 @@ pt-BR:
     new_place: Novo Lugar
     new_game_type: Novo Tipo de Jogo
     new_competence: Nova Competência
+    editing_game: Editando Jogo
+    editing_competence: Editando Competência
+    editing_game_type: Editando Tipo de Jogo
+    editing_place: Editando Lugar
+    editing_scout_branch: Editando Ramo Escoteiro
+    editing_user: Editando Usuário
   form_options:
     show: Mostrar
     edit: Editar

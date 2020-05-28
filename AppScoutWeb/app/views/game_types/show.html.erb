@@ -1,9 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong><%= GameType.human_attribute_name :description %>:</strong>
-  <%= @game_type.description %>
-</p>
+<div class="row">
+  <div class="col-6">
+    <%= label_tag nil, @game_type.class.human_attribute_name(:description) %>
+    <%= text_field_tag nil, @game_type.description, class: "form-control", disabled: true %>
+  </div>
+</div>
 
-<%= link_to t('form_options.edit'), edit_game_type_path(@game_type) %> |
-<%= link_to t('form_options.back'), game_types_path %>
+<%= link_to t('form_options.edit'), edit_game_type_path(@game_type), class: "btn btn-outline-secondary mt-2" %> 
+<%= link_to t('form_options.back'), game_types_path, class: "btn btn-outline-secondary mt-2" %>

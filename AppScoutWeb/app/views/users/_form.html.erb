@@ -1,37 +1,46 @@
 <%= form_with(model: user, local: true) do |form| %>
-  <% if user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+  <div class="row">
+    <div class="col-12">
+      <% if user.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
-      <ul>
-        <% user.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
+          <ul>
+            <% user.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
+    <div class="col-6">
+      <div class="field form-group">
+        <%= form.label :first_name %>
+        <%= form.text_field :first_name, class: "form-control" %>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="field form-group">
+        <%= form.label :email %>
+        <%= form.text_field :email, class: "form-control" %>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="field form-group">
+        <%= form.label :password %>
+        <%= form.text_field :password, class: "form-control", type: "password" %>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="field form-group">
+        <%= form.label :registration_number %>
+        <%= form.text_field :registration_number, class: "form-control" %>
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div class="field">
-    <%= form.label :password %>
-    <%= form.text_field :password %>
-  </div>
-
-  <div class="field">
-    <%= form.label :registration_number %>
-    <%= form.text_field :registration_number %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="row">
+    <div class="col actions">
+      <%= form.submit nil, class: "btn btn-primary"%>
+    </div>
   </div>
 <% end %>
