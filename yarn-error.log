@@ -1,0 +1,59 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js check --integrity
+
+PATH: 
+  /home/joyce/.rvm/gems/ruby-2.6.3/bin:/home/joyce/.rvm/gems/ruby-2.6.3@global/bin:/home/joyce/.rvm/rubies/ruby-2.6.3/bin:/home/joyce/.rvm/bin:/home/joyce/.rbenv/plugins/ruby-build/bin:/home/joyce/.rbenv/shims:/home/joyce/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/joyce/bin:/usr/lib/jvm/jdk1.8.0_oracle/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.17.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  TypeError: Cannot read property '@rails/actioncable@^6.0.0' of undefined
+      at /usr/share/yarn/lib/cli.js:47688:25
+      at Array.filter (<anonymous>)
+      at InstallationIntegrityChecker.<anonymous> (/usr/share/yarn/lib/cli.js:47687:38)
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:328:14
+      at new Promise (<anonymous>)
+      at new F (/usr/share/yarn/lib/cli.js:5301:28)
+      at InstallationIntegrityChecker.<anonymous> (/usr/share/yarn/lib/cli.js:307:12)
+      at InstallationIntegrityChecker.check (/usr/share/yarn/lib/cli.js:47736:21)
+
+npm manifest: 
+  {
+    "name": "AppScoutWeb",
+    "private": false,
+    "dependencies": {
+      "@rails/actioncable": "^6.0.0",
+      "@rails/activestorage": "^6.0.0",
+      "@rails/ujs": "^6.0.0",
+      "@rails/webpacker": "4.2.2",
+      "bootstrap": "^4.5.0",
+      "jquery": "^3.5.1",
+      "notify-js-legacy": "^0.4.1",
+      "popper.js": "^1.16.1",
+      "turbolinks": "^5.2.0",
+      "webpack": "^4.0.0"
+    },
+    "version": "1.0.0",
+    "devDependencies": {
+      "webpack-dev-server": "^3.10.3"
+    },
+    "description": "Aplicativo web para montagem de atividades escoteiras",
+    "main": "index.js",
+    "author": "Joyce Brum <joycebrumu.u@gmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
