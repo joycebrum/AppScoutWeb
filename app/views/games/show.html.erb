@@ -1,22 +1,22 @@
 <p id="notice"><%= notice %></p>
 <div class="row">
-  <div class="col-12 col-md-4">
+  <div class="col-12 col-lg-4">
     <%= label_tag nil, @game.class.human_attribute_name(:title) %>
     <%= text_field_tag nil, @game.title, class: "form-control", disabled: true %>
   </div>
-  <div class="col-6 col-md-2">
+  <div class="col-6 col-lg-2">
     <%= label_tag nil, @game.class.human_attribute_name(:duration_min) %>
     <%= text_field_tag nil, @game.duration_min, class: "form-control", disabled: true %>
   </div>
-  <div class="col-6 col-md-2">
+  <div class="col-6 col-lg-2">
     <%= label_tag nil, @game.class.human_attribute_name(:duration_max) %>
     <%= text_field_tag nil, @game.duration_max, class: "form-control", disabled: true %>
   </div>
-  <div class="col-6 col-md-2">
+  <div class="col-6 col-lg-2">
     <%= label_tag nil, @game.class.human_attribute_name(:quant_min) %>
     <%= text_field_tag nil, @game.quant_min, class: "form-control", disabled: true %>
   </div>
-  <div class="col-6 col-md-2">
+  <div class="col-6 col-lg-2">
     <%= label_tag nil, @game.class.human_attribute_name(:quant_max) %>
     <%= text_field_tag nil, @game.quant_max, class: "form-control", disabled: true %>
   </div>
@@ -28,13 +28,13 @@
     <%= label_tag nil, @game.class.human_attribute_name(:material_list) %>
     <%= text_area_tag nil, @game.material_list, class: "form-control", type: "text", disabled: true %>
   </div>
-  <div class="col-12 col-md-6 field form-group">
+  <div class="col-12 col-lg-6 field form-group">
     <%= label_tag nil, @game.class.human_attribute_name(:url_image) %>
     <%= text_field_tag nil, @game.url_image, class: "form-control", disabled: true %>
   </div>
 </div>
 <div class="row">
-  <div class="col-12 col-md-6">
+  <div class="col-12 col-lg-6">
     <% unless @game.url_image.blank? %> <%=image_tag @game.url_image, width: 200, height: 200%> <%end%>
   </div>
 </div>

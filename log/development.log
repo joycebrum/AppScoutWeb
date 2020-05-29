@@ -11050,23 +11050,23 @@ ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering te
         </div>
       <% end %>
     </div>
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-lg-4">
       <%= form.label :title %>
       <%= form.text_field :title, class: "form-control" %>
     </div>
-    <div class="col-6 col-md-2">
+    <div class="col-6 col-lg-2">
       <%= form.label, :duration_min %>
       <%= form.text_field :duration_min, class: "form-control" %>
     </div>
-    <div class="col-6 col-md-2">
+    <div class="col-6 col-lg-2">
       <%= label_tag nil, @game.class.human_attribute_name(:duration_max) %>
       <%= text_field_tag nil, @game.duration_max, class: "form-control", disabled: true %>
     </div>
-    <div class="col-6 col-md-2">
+    <div class="col-6 col-lg-2">
       <%= label_tag nil, @game.class.human_attribute_name(:quant_min) %>
       <%= text_field_tag nil, @game.quant_min, class: "form-control", disabled: true %>
     </div>
-    <div class="col-6 col-md-2">
+    <div class="col-6 col-lg-2">
       <%= label_tag nil, @game.class.human_attribute_name(:quant_max) %>
       <%= text_field_tag nil, @game.quant_max, class: "form-control", disabled: true %>
     </div>
@@ -11133,23 +11133,23 @@ ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering te
 13:            </div>
 14:          <% end %>
 15:        </div>
-16:        <div class="col-12 col-md-4">
+16:        <div class="col-12 col-lg-4">
 17:          <%= form.label :title %>
 18:          <%= form.text_field :title, class: "form-control" %>
 19:        </div>
-20:        <div class="col-6 col-md-2">
+20:        <div class="col-6 col-lg-2">
 21:          <%= form.label, :duration_min %>
 22:          <%= form.text_field :duration_min, class: "form-control" %>
 23:        </div>
-24:        <div class="col-6 col-md-2">
+24:        <div class="col-6 col-lg-2">
 25:          <%= label_tag nil, @game.class.human_attribute_name(:duration_max) %>
 26:          <%= text_field_tag nil, @game.duration_max, class: "form-control", disabled: true %>
 27:        </div>
-28:        <div class="col-6 col-md-2">
+28:        <div class="col-6 col-lg-2">
 29:          <%= label_tag nil, @game.class.human_attribute_name(:quant_min) %>
 30:          <%= text_field_tag nil, @game.quant_min, class: "form-control", disabled: true %>
 31:        </div>
-32:        <div class="col-6 col-md-2">
+32:        <div class="col-6 col-lg-2">
 33:          <%= label_tag nil, @game.class.human_attribute_name(:quant_max) %>
 34:          <%= text_field_tag nil, @game.quant_max, class: "form-control", disabled: true %>
 35:        </div>
@@ -11835,23 +11835,23 @@ ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering te
         </div>
       <% end %>
     </div>
-    <div class="col-12 col-md-4 field form-group">
+    <div class="col-12 col-lg-4 field form-group">
       <%= form.label :title %>
       <%= form.text_field :title, class: "form-control" %>
     </div>
-    <div class="col-6 col-md-2 field form-group">
+    <div class="col-6 col-lg-2 field form-group">
       <%= form.label :duration_min %>
       <%= form.text_field :duration_min, class: "form-control" %>
     </div>
-    <div class="col-6 col-md-2 field form-group">
+    <div class="col-6 col-lg-2 field form-group">
       <%= form.label :duration_max %>
       <%= form.text_field :duration_max, class: "form-control" %>
     </div>
-    <div class="col-6 col-md-2 field form-group">
+    <div class="col-6 col-lg-2 field form-group">
       <%= form.label :quant_min %>
       <%= form.text_field :quant_min, class: "form-control" %>
     </div>
-    <div class="col-6 col-md-2 field form-group">
+    <div class="col-6 col-lg-2 field form-group">
       <%= form.label :quant_max %>
       <%= form.text_field :quant_max, class: "form-control" %>
     </div>
@@ -11892,23 +11892,23 @@ ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering te
 13:            </div>
 14:          <% end %>
 15:        </div>
-16:        <div class="col-12 col-md-4 field form-group">
+16:        <div class="col-12 col-lg-4 field form-group">
 17:          <%= form.label :title %>
 18:          <%= form.text_field :title, class: "form-control" %>
 19:        </div>
-20:        <div class="col-6 col-md-2 field form-group">
+20:        <div class="col-6 col-lg-2 field form-group">
 21:          <%= form.label :duration_min %>
 22:          <%= form.text_field :duration_min, class: "form-control" %>
 23:        </div>
-24:        <div class="col-6 col-md-2 field form-group">
+24:        <div class="col-6 col-lg-2 field form-group">
 25:          <%= form.label :duration_max %>
 26:          <%= form.text_field :duration_max, class: "form-control" %>
 27:        </div>
-28:        <div class="col-6 col-md-2 field form-group">
+28:        <div class="col-6 col-lg-2 field form-group">
 29:          <%= form.label :quant_min %>
 30:          <%= form.text_field :quant_min, class: "form-control" %>
 31:        </div>
-32:        <div class="col-6 col-md-2 field form-group">
+32:        <div class="col-6 col-lg-2 field form-group">
 33:          <%= form.label :quant_max %>
 34:          <%= form.text_field :quant_max, class: "form-control" %>
 35:        </div>
@@ -11967,7 +11967,7 @@ ActionView::Template::Error (undefined method `url_image' for #<ActionView::Help
 Did you mean?  url_field):
     46:       <%= form.text_field :url_image, class: "form-control" %>
     47:     </div>
-    48:     <div class="col-12 col-md-6">
+    48:     <div class="col-12 col-lg-6">
     49:       <% unless form.url_image.blank? %> asuhauhs <%end%>
     50:     </div>
     51:   </div>
@@ -12374,5 +12374,177 @@ Processing by GameTypesController#index as HTML
   ↳ app/views/game_types/index.html.erb:15
   Rendered game_types/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 4837)
 Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 1.1ms | Allocations: 16351)
+
+
+Started GET "/" for ::1 at 2020-05-29 13:30:43 -0300
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 118.7ms | Allocations: 8237)
+Completed 200 OK in 1001ms (Views: 991.4ms | ActiveRecord: 0.0ms | Allocations: 39955)
+
+
+Started GET "/games" for ::1 at 2020-05-29 13:35:05 -0300
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:20
+  Rendered games/index.html.erb within layouts/application (Duration: 22.4ms | Allocations: 9325)
+Completed 200 OK in 80ms (Views: 74.2ms | ActiveRecord: 1.4ms | Allocations: 21092)
+
+
+Started GET "/games/1/edit" for ::1 at 2020-05-29 13:35:16 -0300
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:67:in `set_game'
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (Duration: 61.6ms | Allocations: 3179)
+  Rendered games/edit.html.erb within layouts/application (Duration: 63.1ms | Allocations: 3678)
+Completed 200 OK in 82ms (Views: 78.1ms | ActiveRecord: 0.2ms | Allocations: 15323)
+
+
+Started GET "/games/1/edit" for ::1 at 2020-05-29 13:36:14 -0300
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:67:in `set_game'
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (Duration: 7.2ms | Allocations: 2491)
+  Rendered games/edit.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2974)
+Completed 200 OK in 37ms (Views: 23.4ms | ActiveRecord: 0.2ms | Allocations: 15303)
+
+
+Started GET "/games/1/edit" for ::1 at 2020-05-29 13:36:17 -0300
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:67:in `set_game'
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (Duration: 3.1ms | Allocations: 1907)
+  Rendered games/edit.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2090)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.1ms | Allocations: 13157)
+
+
+Started GET "/games/1/edit" for ::1 at 2020-05-29 13:36:18 -0300
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:67:in `set_game'
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (Duration: 7.8ms | Allocations: 1904)
+  Rendered games/edit.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2087)
+Completed 200 OK in 40ms (Views: 35.9ms | ActiveRecord: 0.1ms | Allocations: 13167)
+
+
+Started GET "/games/1/edit" for ::1 at 2020-05-29 13:37:02 -0300
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:67:in `set_game'
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (Duration: 10.8ms | Allocations: 2474)
+  Rendered games/edit.html.erb within layouts/application (Duration: 13.7ms | Allocations: 2952)
+Completed 200 OK in 64ms (Views: 60.5ms | ActiveRecord: 1.1ms | Allocations: 15295)
+
+
+Started GET "/games/1/edit" for ::1 at 2020-05-29 13:37:49 -0300
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:67:in `set_game'
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (Duration: 6.0ms | Allocations: 2491)
+  Rendered games/edit.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2975)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.1ms | Allocations: 15315)
+
+
+Started GET "/games/1/edit" for ::1 at 2020-05-29 13:37:53 -0300
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:67:in `set_game'
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (Duration: 6.8ms | Allocations: 2474)
+  Rendered games/edit.html.erb within layouts/application (Duration: 9.7ms | Allocations: 2951)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.1ms | Allocations: 15267)
+
+
+Started GET "/games/1/edit" for ::1 at 2020-05-29 13:38:47 -0300
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:67:in `set_game'
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (Duration: 6.2ms | Allocations: 2477)
+  Rendered games/edit.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2954)
+Completed 200 OK in 39ms (Views: 35.3ms | ActiveRecord: 0.2ms | Allocations: 15278)
+
+
+Started GET "/games" for ::1 at 2020-05-29 13:38:50 -0300
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:20
+  Rendered games/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1781)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.2ms | Allocations: 12503)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mScoutBranch Load (42.9ms)[0m  [1m[34mSELECT "scout_branches".* FROM "scout_branches" WHERE "scout_branches"."description" = ? LIMIT ?[0m  [["description", "Lobinho"], ["LIMIT", 1]]
+  [1m[36mScoutBranch Load (0.2ms)[0m  [1m[34mSELECT "scout_branches".* FROM "scout_branches" WHERE "scout_branches"."description" = ? LIMIT ?[0m  [["description", "Escoteiro"], ["LIMIT", 1]]
+  [1m[36mScoutBranch Load (0.1ms)[0m  [1m[34mSELECT "scout_branches".* FROM "scout_branches" WHERE "scout_branches"."description" = ? LIMIT ?[0m  [["description", "Sênior"], ["LIMIT", 1]]
+  [1m[36mScoutBranch Load (0.1ms)[0m  [1m[34mSELECT "scout_branches".* FROM "scout_branches" WHERE "scout_branches"."description" = ? LIMIT ?[0m  [["description", "Pioneiro"], ["LIMIT", 1]]
+  [1m[36mPlace Load (36.1ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."place_type" = ? LIMIT ?[0m  [["place_type", "Água"], ["LIMIT", 1]]
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."place_type" = ? LIMIT ?[0m  [["place_type", "Quadra"], ["LIMIT", 1]]
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."place_type" = ? LIMIT ?[0m  [["place_type", "Campo aberto"], ["LIMIT", 1]]
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."place_type" = ? LIMIT ?[0m  [["place_type", "Qualquer Lugar"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlace Create (14.3ms)[0m  [1m[32mINSERT INTO "places" ("place_type", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["place_type", "Qualquer Lugar"], ["created_at", "2020-05-29 16:48:03.340654"], ["updated_at", "2020-05-29 16:48:03.340654"]]
+  [1m[35m (113.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mGameType Load (0.2ms)[0m  [1m[34mSELECT "game_types".* FROM "game_types" WHERE "game_types"."description" = ? LIMIT ?[0m  [["description", "Ativo"], ["LIMIT", 1]]
+  [1m[36mGameType Load (0.2ms)[0m  [1m[34mSELECT "game_types".* FROM "game_types" WHERE "game_types"."description" = ? LIMIT ?[0m  [["description", "Quebra-Gelo"], ["LIMIT", 1]]
+  [1m[36mGameType Load (0.1ms)[0m  [1m[34mSELECT "game_types".* FROM "game_types" WHERE "game_types"."description" = ? LIMIT ?[0m  [["description", "Círculo"], ["LIMIT", 1]]
+  [1m[36mGameType Load (0.1ms)[0m  [1m[34mSELECT "game_types".* FROM "game_types" WHERE "game_types"."description" = ? LIMIT ?[0m  [["description", "Revesamento"], ["LIMIT", 1]]
+  [1m[36mGameType Load (0.1ms)[0m  [1m[34mSELECT "game_types".* FROM "game_types" WHERE "game_types"."description" = ? LIMIT ?[0m  [["description", "Instrução"], ["LIMIT", 1]]
+  [1m[36mGameType Load (0.2ms)[0m  [1m[34mSELECT "game_types".* FROM "game_types" WHERE "game_types"."description" = ? LIMIT ?[0m  [["description", "Técnico"], ["LIMIT", 1]]
+  [1m[36mGameType Load (0.2ms)[0m  [1m[34mSELECT "game_types".* FROM "game_types" WHERE "game_types"."description" = ? LIMIT ?[0m  [["description", "Virtual/Remoto"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGameType Create (0.3ms)[0m  [1m[32mINSERT INTO "game_types" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Virtual/Remoto"], ["created_at", "2020-05-29 16:48:03.496129"], ["updated_at", "2020-05-29 16:48:03.496129"]]
+  [1m[35m (67.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/games" for ::1 at 2020-05-29 13:48:11 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:20
+  Rendered games/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1305)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.3ms | Allocations: 11877)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 13:48:15 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.3ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 4706)
+Completed 200 OK in 72ms (Views: 68.6ms | ActiveRecord: 1.0ms | Allocations: 16254)
+
+
+Started GET "/competences/1" for ::1 at 2020-05-29 13:48:18 -0300
+Processing by CompetencesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompetence Load (0.2ms)[0m  [1m[34mSELECT "competences".* FROM "competences" WHERE "competences"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/competences_controller.rb:67:in `set_competence'
+  Rendering competences/show.html.erb within layouts/application
+  Rendered competences/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 549)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.2ms | Allocations: 11857)
 
 

@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <div class="row">
-  <div class="col-12 col-md-2">
+  <div class="col-12 col-lg-2">
     <%= label_tag nil, @competence.class.human_attribute_name(:number) %>
     <%= text_field_tag nil, @competence.number, class: "form-control", disabled: true %>
   </div>
-  <div class="col-12 col-md-10">
+  <div class="col-12 col-lg-10">
     <%= label_tag nil, @competence.class.human_attribute_name(:title) %>
     <%= text_area_tag nil, @competence.title, class: "form-control", disabled: true %>
   </div>

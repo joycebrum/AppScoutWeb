@@ -33,6 +33,9 @@ places = [
   },
   {
     place_type: 'Campo aberto'
+  },
+  {
+    place_type: 'Qualquer Lugar'
   }
 ]
 
@@ -58,6 +61,9 @@ game_types = [
   },
   {
     description: 'Técnico'
+  },
+  {
+    description: 'Virtual/Remoto'
   }
 ]
 game_types.each do |game_type|
