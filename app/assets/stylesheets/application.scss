@@ -14,3 +14,13 @@
  *= require_self
  *= require bootstrap
  */
+ @media all and (max-width: 1200px) { /* screen size until 1200px */
+  body {
+      font-size: 1.5em !important; /* 1.5x default size */
+  }
+}
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+  body {
+      font-size: 2.5em !important; /* 1.2x default size */
+      }
+  }

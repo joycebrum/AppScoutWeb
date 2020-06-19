@@ -12548,3 +12548,441 @@ Processing by CompetencesController#show as HTML
 Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.2ms | Allocations: 11857)
 
 
+Started GET "/competences" for ::1 at 2020-05-29 13:55:09 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.3ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 994)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.3ms | Allocations: 11551)
+
+
+Started GET "/competences/1" for ::1 at 2020-05-29 13:55:12 -0300
+Processing by CompetencesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompetence Load (0.3ms)[0m  [1m[34mSELECT "competences".* FROM "competences" WHERE "competences"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/competences_controller.rb:67:in `set_competence'
+  Rendering competences/show.html.erb within layouts/application
+  Rendered competences/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 314)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.3ms | Allocations: 11369)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 13:55:15 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.1ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 972)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.1ms | Allocations: 11522)
+
+
+Started GET "/competences/1" for ::1 at 2020-05-29 13:57:18 -0300
+Processing by CompetencesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompetence Load (0.2ms)[0m  [1m[34mSELECT "competences".* FROM "competences" WHERE "competences"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/competences_controller.rb:67:in `set_competence'
+  Rendering competences/show.html.erb within layouts/application
+  Rendered competences/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 318)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.2ms | Allocations: 11370)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 13:57:21 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.1ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 971)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.1ms | Allocations: 11525)
+
+
+Started GET "/" for ::1 at 2020-05-29 14:06:11 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 196)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 11452)
+
+
+Started GET "/" for ::1 at 2020-05-29 14:08:37 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 204)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 12126)
+
+
+Started GET "/" for ::1 at 2020-05-29 14:11:08 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 216)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 12144)
+
+
+Started GET "/" for ::1 at 2020-05-29 14:11:29 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 208)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 12122)
+
+
+Started GET "/" for ::1 at 2020-05-29 14:11:48 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 208)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 12122)
+
+
+Started GET "/games" for ::1 at 2020-05-29 14:12:14 -0300
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:20
+  Rendered games/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1802)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.2ms | Allocations: 12979)
+
+
+Started GET "/" for ::1 at 2020-05-29 14:12:17 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 58)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 10743)
+
+
+Started GET "/" for ::1 at 2020-05-29 14:12:32 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 213)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 12130)
+
+
+Started GET "/" for ::1 at 2020-05-29 14:14:27 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 207)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 12125)
+
+
+Started GET "/" for ::1 at 2020-05-29 14:16:34 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 207)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 12138)
+
+
+Started GET "/" for ::1 at 2020-05-29 14:16:39 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 58)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 10725)
+
+
+Started GET "/" for ::1 at 2020-05-29 14:16:40 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 58)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 10719)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 14:16:41 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.2ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1311)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.2ms | Allocations: 12456)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 14:17:40 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.1ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1287)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.1ms | Allocations: 13106)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 14:18:55 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.2ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1295)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.2ms | Allocations: 13133)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 14:19:02 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.1ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1286)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.1ms | Allocations: 13042)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 14:19:15 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.1ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1286)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.1ms | Allocations: 12998)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 14:20:35 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.2ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1295)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.2ms | Allocations: 13112)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 14:22:58 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.1ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1286)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.1ms | Allocations: 13090)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 14:24:10 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.1ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1286)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.1ms | Allocations: 13091)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 14:24:21 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.2ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1286)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.2ms | Allocations: 13052)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 14:24:38 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.1ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1295)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.1ms | Allocations: 13062)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 15:14:48 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.4ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 994)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.4ms | Allocations: 11513)
+
+
+Started GET "/competences" for ::1 at 2020-05-29 15:16:42 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.1ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 971)
+Completed 200 OK in 253ms (Views: 252.0ms | ActiveRecord: 0.1ms | Allocations: 37975)
+
+
+Started GET "/" for ::1 at 2020-05-29 15:16:45 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 212)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 11282)
+
+
+Started GET "/" for ::1 at 2020-05-29 15:20:38 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 198)
+Completed 200 OK in 118ms (Views: 116.9ms | ActiveRecord: 0.0ms | Allocations: 35152)
+
+
+Started GET "/" for ::1 at 2020-05-29 15:21:10 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 58)
+Completed 200 OK in 102ms (Views: 101.3ms | ActiveRecord: 0.0ms | Allocations: 32847)
+
+
+Started GET "/" for ::1 at 2020-05-29 15:22:25 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 58)
+Completed 200 OK in 65ms (Views: 64.4ms | ActiveRecord: 0.0ms | Allocations: 32500)
+
+
+Started GET "/" for ::1 at 2020-05-29 15:23:11 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 58)
+Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.0ms | Allocations: 32574)
+
+
+Started GET "/" for ::1 at 2020-06-19 13:04:23 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 51.6ms | Allocations: 6819)
+Completed 200 OK in 615ms (Views: 601.5ms | ActiveRecord: 0.0ms | Allocations: 71323)
+
+
+Started GET "/games" for ::1 at 2020-06-19 13:04:28 -0300
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:20
+  Rendered games/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 9330)
+Completed 200 OK in 70ms (Views: 65.6ms | ActiveRecord: 0.7ms | Allocations: 20958)
+
+
+Started GET "/games/1" for ::1 at 2020-06-19 13:04:52 -0300
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:67:in `set_game'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1592)
+Completed 200 OK in 20ms (Views: 16.0ms | ActiveRecord: 0.3ms | Allocations: 13122)
+
+
+Started GET "/games" for ::1 at 2020-06-19 13:06:53 -0300
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:20
+  Rendered games/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1293)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.1ms | Allocations: 11754)
+
+
+Started GET "/games/1/edit" for ::1 at 2020-06-19 13:07:00 -0300
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:67:in `set_game'
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/_form.html.erb (Duration: 59.5ms | Allocations: 5428)
+  Rendered games/edit.html.erb within layouts/application (Duration: 60.7ms | Allocations: 5921)
+Completed 200 OK in 86ms (Views: 81.6ms | ActiveRecord: 0.1ms | Allocations: 16941)
+
+
+Started PATCH "/games/1" for ::1 at 2020-06-19 13:07:18 -0300
+Processing by GamesController#update as HTML
+  Parameters: {"authenticity_token"=>"GSa1FzoLBAP1TLKOVvC0sUHRBZlxl2ja5FmUU0z+G4cpid+uC4ltxYtUbfx2tXCeCC/AOYNFwP0KMxMUo9uAOg==", "game"=>{"title"=>"Bulldog", "duration_min"=>"4", "duration_max"=>"10", "quant_min"=>"3", "quant_max"=>"10", "description"=>"Jogo Legal", "material_list"=>"", "url_image"=>"https://i.ytimg.com/vi/mpT9CqcZ0Ks/hqdefault.jpg"}, "commit"=>"Atualizar Jogo", "id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:67:in `set_game'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/games_controller.rb:44:in `block in update'
+  [1m[36mGame Update (0.5ms)[0m  [1m[33mUPDATE "games" SET "material_list" = ?, "updated_at" = ? WHERE "games"."id" = ?[0m  [["material_list", ""], ["updated_at", "2020-06-19 16:07:18.304192"], ["id", 1]]
+  ↳ app/controllers/games_controller.rb:44:in `block in update'
+  [1m[35m (85.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/games_controller.rb:44:in `block in update'
+Redirected to http://localhost:4200/games/1
+Completed 302 Found in 98ms (ActiveRecord: 86.2ms | Allocations: 4506)
+
+
+Started GET "/games/1" for ::1 at 2020-06-19 13:07:18 -0300
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:67:in `set_game'
+  Rendering games/show.html.erb within layouts/application
+  Rendered games/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1018)
+Completed 200 OK in 17ms (Views: 13.8ms | ActiveRecord: 0.2ms | Allocations: 12143)
+
+
+Started GET "/games" for ::1 at 2020-06-19 13:07:21 -0300
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:20
+  Rendered games/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1280)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.1ms | Allocations: 11734)
+
+
+Started GET "/" for ::1 at 2020-06-19 13:07:30 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 58)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 10628)
+
+
+Started GET "/games" for ::1 at 2020-06-19 13:07:34 -0300
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:20
+  Rendered games/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1274)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.1ms | Allocations: 11728)
+
+
+Started GET "/" for ::1 at 2020-06-19 13:07:36 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 58)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 10621)
+
+
+Started GET "/games" for ::1 at 2020-06-19 13:07:37 -0300
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:20
+  Rendered games/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1286)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.2ms | Allocations: 11742)
+
+
+Started GET "/games" for ::1 at 2020-06-19 13:07:39 -0300
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:20
+  Rendered games/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1273)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.1ms | Allocations: 11732)
+
+
+Started GET "/competences" for ::1 at 2020-06-19 13:07:43 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.2ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 4550)
+Completed 200 OK in 62ms (Views: 52.2ms | ActiveRecord: 1.0ms | Allocations: 15934)
+
+
+Started GET "/games" for ::1 at 2020-06-19 13:07:46 -0300
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:20
+  Rendered games/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1296)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.1ms | Allocations: 11768)
+
+
+Started GET "/competences" for ::1 at 2020-06-19 13:07:50 -0300
+Processing by CompetencesController#index as HTML
+  Rendering competences/index.html.erb within layouts/application
+  [1m[36mCompetence Load (0.2ms)[0m  [1m[34mSELECT "competences".* FROM "competences"[0m
+  ↳ app/views/competences/index.html.erb:16
+  Rendered competences/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 975)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.2ms | Allocations: 11410)
+
+
+Started GET "/games" for ::1 at 2020-06-19 13:07:51 -0300
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:20
+  Rendered games/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1273)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.2ms | Allocations: 11725)
+
+
